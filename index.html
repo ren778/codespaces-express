@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='ja'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Pin pon</title>
+    <style>
+      body, html {
+        margin: 0;
+      }
+      main {
+        height: 100vh;
+        width: 600px;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style='margin: 0;top: 10px;left: 10px;position: absolute;'>Pin pon</h1>
+    <main>
+
+    </main>
+
+    <script src='https://code.jquery.com/jquery-3.6.3.min.js'></script>
+    <script>
+      $('main').outerHeight($(window).height());
+        $(window).on('resize', () => {
+          $('main').outerHeight($(window).height());
+      });
+    </script>
+  </body>
+</html>
